@@ -2,7 +2,9 @@ public class PositiveNegativeZero
 {
     public static void main(String[] args)
     {
-        checkNumber(5);
+        checkNumber(2);
+        checkNumber(-22);
+        checkNumber(0);
     }
 
     public static void checkNumber(int number)
