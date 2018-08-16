@@ -5,13 +5,13 @@ public class MegaBytesConverter {
         printMegaBytesAndKiloBytes(2050);
     }
 
-    public static void printMegaBytesAndKiloBytes(int kiloBytes)
-    {
-        if(kiloBytes < 0) {
+    public static void printMegaBytesAndKiloBytes(int kiloBytes) {
+        if (kiloBytes < 0) {
             System.out.println("Invalid Value");
+        } else {
+            int megaBytes = (int) kiloBytes / 1024;
+            int remainingKiloBytes = kiloBytes % 1024;
+            System.out.println(kiloBytes + " KB = " + megaBytes + " MB and " + remainingKiloBytes + " KB");
         }
-        int megaBytes = (int) kiloBytes / 1024;
-        int remainingKiloBytes = kiloBytes % 1024;
-        System.out.println(kiloBytes + " KB = " + megaBytes + " and " + remainingKiloBytes + " KB");
     }
 }
